@@ -10,7 +10,8 @@ app.use(express.static('static'));
 app.use(morgan('combined'));
 
 var port = process.env.PORT || 8080;
-var message = process.env.MESSAGE || "Have a blast learning Docker!";
+
+var message = process.env.MESSAGE || "ROCK AND ROLL WITH Docker!!!";
 
 app.get('/', function (req, res) {
     res.render('home', {
